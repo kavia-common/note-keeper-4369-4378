@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
+/* Theme tokens */
 :root {
-  --color-primary: #000000;
-  --color-secondary: #FFFFFF;
-  --color-accent: #3B82F6;
-  --color-background: #FFFFFF;
+  --primary: #2563eb; /* primary */
+  --primary-600: #1d4ed8;
+  --secondary: #374151; /* text */
+  --muted: #6b7280;
+  --accent: #f59e42;
+  --background: #ffffff;
+  --surface: #ffffff;
+  --border: #e5e7eb;
 }
 
 * {
@@ -17,10 +22,16 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: var(--color-background);
-  color: var(--color-primary);
+  background-color: var(--background);
+  color: var(--secondary);
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* global element theming */
+.border {
+  border-color: var(--border);
 }
